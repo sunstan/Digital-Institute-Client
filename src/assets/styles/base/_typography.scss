@@ -1,0 +1,54 @@
+@layer base {
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-blue-500;
+    }
+
+    h1 {
+        @apply
+        text-3xl font-bold
+        md:text-5xl md:leading-tight
+        lg:text-6xl lg:leading-tight;
+    }
+
+    h2 {
+        @apply
+        text-xl font-bold
+        md:text-3xl md:leading-tight
+        lg:text-3xl lg:leading-tight;
+    }
+
+    h3 {
+        @apply
+        leading-tight text-lg font-semibold
+        md:text-xl md:leading-tight
+        lg:text-2xl lg:leading-tight;
+    }
+
+    h4 {
+        @apply
+        leading-tight text-lg font-semibold
+        md:text-lg md:leading-tight
+        lg:text-xl lg:leading-tight;
+    }
+
+    h5 {
+        @apply
+        leading-snug text-lg font-semibold
+        md:leading-tight
+        lg:leading-tight;
+    }
+
+    h6 {
+        @apply
+        leading-tight font-medium
+        md:leading-tight
+        lg:leading-tight;
+    }
+
+    p {
+        @apply
+        whitespace-pre-wrap leading-6 text-gray-500 font-normal text-sm
+        lg:leading-6 lg:text-base;
+    }
+}

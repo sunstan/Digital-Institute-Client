@@ -1,0 +1,99 @@
+{
+    "detectRetina": false,
+    "fpsLimit": 60,
+    "interactivity": {
+        "events": {
+            "onClick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "onHover": {
+                "enable": true,
+                "mode": "grab"
+            }
+        },
+        "modes": {
+            "grab": {
+                "distance": 130
+            },
+            "push": {
+                "quantity": 2
+            }
+        }
+    },
+    "particles": {
+        "color": {
+            "value": "#FC9C3D",
+            "animation": {
+                "speed": 10,
+                "sync": false
+            }
+        },
+        "links": {
+            "color": {
+                "value": "#FC9C3D"
+            },
+            "enable": true,
+            "opacity": 1,
+            "distance": 100
+        },
+        "move": {
+            "attract": {
+                "rotate": {
+                    "x": 600,
+                    "y": 1200
+                }
+            },
+            "enable": true,
+            "outModes": {
+                "default": "out",
+                "bottom": "out",
+                "left": "out",
+                "right": "out",
+                "top": "out"
+            }
+        },
+        "number": {
+            "density": {
+                "enable": true
+            },
+            "value": 120
+        },
+        "opacity": {
+            "value": 0.5,
+            "animation": {
+                "minimumValue": 0.1,
+                "speed": 3
+            }
+        },
+        "shape": {
+            "options": {
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "star": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "https://cdn.matteobruni.it/images/particles/github.svg",
+                    "width": 100,
+                    "height": 100
+                },
+                "images": {
+                    "src": "https://cdn.matteobruni.it/images/particles/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            }
+        },
+        "size": {
+            "random": {
+                "enable": true
+            },
+            "animation": {
+                "minimumValue": 0.1,
+                "speed": 20
+            }
+        }
+    }
+}

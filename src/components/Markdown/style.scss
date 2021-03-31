@@ -1,0 +1,62 @@
+@layer base {
+    .markdown {
+        h1, h2 {
+            @apply mb-10;
+        }
+
+        h3, h4, h5, h6 {
+            @apply leading-normal mb-4;
+        }
+
+        p, ul, ol, blockquote, pre {
+            @apply mb-10 #{!important};
+        }
+
+        p {
+            @apply lg:text-lg;
+        }
+
+        blockquote > p {
+            @apply px-4 mx-auto max-w-2xl border-l-4 font-serif border-gray-200;
+        }
+
+        blockquote > p, em {
+            @apply italic;
+        }
+
+        a {
+            @apply text-blue-500 font-semibold;
+        }
+
+        U, a:hover {
+            @apply underline;
+        }
+
+        strong {
+            @apply text-gray-800 font-semibold;
+        }
+
+        li {
+            @apply relative py-3 pl-5 pr-5 block list-none text-gray-500 text-sm
+            md:pl-10
+            lg:text-base;
+            &:nth-child(2n+1) {@apply bg-gray-50;}
+        }
+
+        ul li:before {
+            @apply hidden absolute left-5 top-5 w-2 h-2 rounded-full flex-shrink-0 bg-orange-500
+            md:block;
+            content: '';
+        }
+
+        ol li {
+            counter-increment: list;
+        }
+
+        ol li:before {
+            @apply hidden absolute left-5 top-5 text-sm font-bold
+            md:block;
+            content: counter(list);
+        }
+    }
+}
